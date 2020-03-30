@@ -1,0 +1,8 @@
+There are 3 versions.
+
+The first version: It is a version in "Brute-force" version which is not at all optimal. (Python)
+
+la version 2 : Est une version plus intelligente que la version 1, sauf que celle-ci peut rencontrer un problème de segementation fault, quand le taquin est proche de 78/79 en profondeur. Le résultat du chemin à faire n'a pas été implémenté dans celui-ci. L'idée de celui-ci était de transformer le taquin 4*4 en 3*3 en plaçant 3,7,11,12,13,14 . Permets de faire une profondeur en 2 partis. Problèmes :  les autres chiffres ne sont pas placés optimalement, donc soit il faut avoir de la chance soit tout générer ainsi (ce qui n'est pas le bon plan).
+Cette méthode prenait en compte les cases mals passées pour changer de profondeur et de même si une case est trop loin de la position finale, il passe à une autre possibilité.
+
+version 3 : Meilleure gestion de la version 2, et surtout mise en place d'un makefile (c'est la vie ce fichier <3), bon celui-ci est très bon mais à partir d'un seuil de 68 en profondeur c'est la mort pour celui-ci. Ajout dans la structure d'un char pour le dernier déplacement. Essai pour avoir la chaine complète mais segmentation fault car pas assez de mémoire ou je ne le fais pas bien... (pour le taquin 80 il faudrait donc faire 80 fois l'opération en modifiant à chaque fois le fichier). Lit un fichier, donc plus besoin de rentrer et compiler à chaque fois le fichier :D.
